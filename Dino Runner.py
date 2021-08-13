@@ -32,12 +32,16 @@ dino = [pygame.image.load(os.path.join('Assets/Dino', 'DinoDead.png')),
         pygame.image.load(os.path.join('Assets/Dino', 'DinoRun2.png')),
         pygame.image.load(os.path.join('Assets/Dino', 'DinoStart.png'))]
 
+# need to create if statement to set diff colours on level
+backGroundColour = (255,255,255)        #RGB for white
+window.fill(backGroundColour)
 
 # displays window
 pygame.display.flip()
 
 running = True
 while running:
+  pygame.Surface
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
       running = False
