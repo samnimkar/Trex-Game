@@ -1,6 +1,8 @@
 import pygame
 import os
 
+from pygame.color import Color
+
 # Initilization
 pygame.init()
 
@@ -35,6 +37,9 @@ dino = [pygame.image.load(os.path.join('Assets/Dino', 'DinoDead.png')),
 # need to create if statement to set diff colours on level
 backGroundColour = (255,255,255)        #RGB for white
 window.fill(backGroundColour)
+window.blit(track,(0*(windowX),0.75*(windowY))) #put track on GUI
+
+#set class for dino and program motion
 
 # displays window
 pygame.display.flip()
